@@ -1,0 +1,396 @@
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#text-effect {
+    height: 0;
+    width: 0;
+}
+
+svg.text {
+    width: 7.8em;
+    height: 1.8em;
+}
+
+h1 {
+    position: relative;
+    font-size: 2.8em;
+    font-family: 'Oswald', sans-serif;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+.mobile {
+    display: block;
+}
+
+h1.mobile {
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1.black {
+    color: black;
+}
+
+h1.white {
+    color: white;
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 3em;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    background-color: #f1d806;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: black;
+}
+
+header img {
+    width: 100%;
+}
+
+header figure {
+    width: 100%;
+    order: 2;
+    margin: 0 auto;
+}
+
+header figcaption {
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+header .container {
+    margin: 0 auto;
+}
+
+#intro-first {
+    order: 1;
+}
+
+#intro-second {
+    order: 3;
+}
+
+.about-contact {
+    float: right;
+    border: solid;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+#work-in-progress {
+    float: right;
+    margin-top: 1rem;
+    font-size: 0.75em;
+}
+
+section {
+    width: 100%;
+    display: inline-block;
+}
+
+#project-section, #business-card {
+background-color:#eeeeee;
+background-image: 
+radial-gradient(circle at 100% 150%, #eeeeee 24%, white 25%, white 28%, #eeeeee 29%, #eeeeee 36%, white 36%, white 40%, transparent 40%, transparent),
+radial-gradient(circle at 0    150%, #eeeeee 24%, white 25%, white 28%, #eeeeee 29%, #eeeeee 36%, white 36%, white 40%, transparent 40%, transparent),
+radial-gradient(circle at 50%  100%, white 10%, #eeeeee 11%, #eeeeee 23%, white 24%, white 30%, #eeeeee 31%, #eeeeee 43%, white 44%, white 50%, #eeeeee 51%, #eeeeee 63%, white 64%, white 71%, transparent 71%, transparent),
+radial-gradient(circle at 100% 50%, white 5%, #eeeeee 6%, #eeeeee 15%, white 16%, white 20%, #eeeeee 21%, #eeeeee 30%, white 31%, white 35%, #eeeeee 36%, #eeeeee 45%, white 46%, white 49%, transparent 50%, transparent),
+radial-gradient(circle at 0    50%, white 5%, #eeeeee 6%, #eeeeee 15%, white 16%, white 20%, #eeeeee 21%, #eeeeee 30%, white 31%, white 35%, #eeeeee 36%, #eeeeee 45%, white 46%, white 49%, transparent 50%, transparent);
+background-size:100px 50px;
+}
+
+#project-section .container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#project-section svg.text {
+    width: 6em;
+}
+
+.carousel-caption {
+    visibility: hidden;
+}
+
+#carousel-subtitles {
+    display: block;
+    text-align: center;
+    color: #696969;
+    height: 4em;
+}
+
+#skills-section {
+    background-color: #cdf383;
+    height: 22.5em;
+}
+
+#skills-section svg.text {
+    width: 4em;
+}
+
+#skills-section h1, 
+#experience-section h1 {
+    margin-top: 0.5rem;
+}
+
+#skills-section li {
+    font-family: 'Impact', sans-serif;
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    margin-left: -1.5em;
+}
+
+#skills-columns {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 100%;
+        flex: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    width: 100%;
+}
+
+h2 .skills-text {
+    height: 1em;
+    width: 3em;
+}
+
+.skills-text {
+    position: absolute;
+    height: 8.9em;
+    width: 5.6em;
+    padding: 0;
+}
+
+.skill-level {
+    display: block;
+    padding: 0;
+}
+
+.skill-level:first-child {
+    width: 5.6rem;
+    margin-left: 0.25rem;
+}
+
+.skill-level:nth-last-child(2) {
+    width: 7.5rem;
+}
+
+.skill-level:last-child {
+    width: 5.4rem;
+}
+
+#experience-section {
+    color: #ffffff;
+    background-color: #093852;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#education-section {
+    background-image: url('../img/pink-sky.jpg');
+    background-size: 100%;
+    background-color: #f8d0db;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+#experience-section svg.text {
+    width: 6.6em;
+}
+
+#education-section .container {
+    width: 100%;
+}
+
+#education-section .container.content {
+    display: block;
+}
+
+#education-section svg.text {
+    width: 6em;
+}
+
+#education-section h1 {
+    margin-top: 3rem;
+    margin-bottom: -0.5em;
+}
+
+#edu-left {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#edu-right {
+    width: 90%;
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    margin: 0 auto;
+    padding: 0.5em;
+
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+}
+
+.school {
+    width: 100%;
+    border-radius: 0.5rem;
+    border-style: solid;
+    padding: 0.25em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    background-color: #eeffee;
+}
+
+.school li {
+    list-style: none;
+}
+
+.school ul {
+    margin: 0;
+}
+
+#expected {
+    font-style: italic;
+}
+
+#mooc-section {
+    background-color: #2a2727;
+}
+
+#mooc-divider {
+    display: block;
+    width: 100%;
+    height: 45px;
+    fill: #2a2727;
+    background: #f8d0db;
+    margin-bottom: 1em;
+}
+
+#mooc-section svg.text {
+    width: 4.5em;
+}
+
+.card-row {
+    display: none
+}
+
+.details {
+    width: 100%;
+    display: block;
+}
+
+.mooc-course {
+    display: block;
+    width: 96%;
+    border-style: dashed;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0.5rem;
+    margin: 0.5em;
+    padding: 1em;
+    background-color: #e9e9e9;  
+}
+
+.mooc-title {
+    font-size: 1.25em;
+}
+
+.badge-edx {
+    background-color: #099fec;
+}
+
+.badge-coursera {
+    background-color: #663333;
+}
+
+.mooc-comments {
+    margin-bottom: 2em;
+}
+
+.mooc-institution {
+    font-family: 'Arizonia', Helvetica, sans-serif;
+    color: #666666; 
+    font-style: italic;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0.6em;
+}
+
+.btn {
+    position: relative;
+    right: 1em;
+    margin: 0.2rem;
+}
+
+footer {
+    display: flex;
+}
+
+footer svg.text {
+    width: 6.6em;
+}
+
+footer h1 {
+    margin-left: 0.4em;
+}
+
+footer .container {
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#business-card {
+    width: 90%;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1em;
+    margin: 0 auto;
+    padding: 1em;
+    box-shadow: 10px 10px 5px grey;
+    padding-left: 10%;
+}
+
+#business-card div {
+    margin-left: 0.25em;
+}
+
+.name {
+    font-weight: bold;
+}
+
+
+/* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
