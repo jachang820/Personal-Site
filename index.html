@@ -12,6 +12,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 	<script src="js/profile.js"></script>
+	<base target="_blank">
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -82,10 +83,10 @@
 				  </ol>
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
-				      <img class="d-block w-100" src="http://via.placeholder.com/800x400/555555/8f8f8f?text=+">
+				      <img class="d-block w-100" src="img/lependu.jpg">
 			        <div class="carousel-caption d-none d-md-block">
-						    <h3>FIRST PROJECT</h3>
-						    <p>Coming soon to a resume near you!</p>
+						    <h3>LE PENDU</h3>
+						    <p>A Hangman web app using Sinatra.</p>
 						  </div>
 				    </div>
 				    <div class="carousel-item">
@@ -112,7 +113,24 @@
 				    <span class="sr-only">Next</span>
 				  </a>
 				</div>
-				<div id="carousel-subtitles"></div>
+				<!-- Copies carousel text here -->
+				<div class="stroke" id="carousel-subtitles"></div>
+			</div>
+			<div id="grey-out-screen"> </div>
+			<div id="project-modal">
+				<div id="project1">
+					<img class="modal-img" src="img/lependu.jpg" alt="Project 1">
+					<div class="modal-body">
+						<h2 class="modal-title">Le Pendu</h2>
+						<p><img class="icon" src="img/code.svg" alt="code icon"> Ruby, Sinatra, Javascript, JQuery, AJAX, RSpec, HTML, CSS, FLStudio (music production), Photoshop</p>
+						<p>Le Pendu is a hangman game built on top of Sinatra for Ruby. The name is French for "Hanged Man", borrowed from the title of the picture used as the main background, drawn by Albert Besnard in 1873. I used elements of this picture for a slight plot twist on the original hangman. In this game, the player is a witch trying to remember a spell to prevent a criminal from escaping the hanging.</p>
+						<p>The project focuses on a full stack, from Sinatra to Javascript, rounding out with design work and music production. Capybara/RSpec was very useful for ironing out game logic. It is important that any sound must be expected by the player, so the game begins muted. The controls must persist across all pages and HTTP requests. Also, the music cannot be interrupted by the POST requests used by the guesses. Therefore, the game uses AJAX to send JSON strings to Sinatra to bypass the rendering. </p>
+						<p>The second problem, then, is limiting the features dependent on Javascript so that the game could be played even without it. Therefore, careful considerations were necessary to make sure the default HTML elements were functional even without Javascript. Using JQuery to handle keypress events, then sending them with AJAX is more aesthetically pleasing than typing in a textbox and submitting a form. Of course, players on a mobile phone cannot type without a focus for the onscreen keyboard, so the form needs to be visible and in the right place when the screen gets too small.</p>
+						<p>Finally, the music of the game was produced using FLStudio and looped using Audacity. Please note that the plot of the game is somewhat thematically dark, although there are no explicit imagery. It is hosted on a free Heroku dyno for now, but I might move it to an AWS EC2 micro if it's too slow. </p>
+					</div>
+					<div class="modal-footer"><a class="btn btn-primary btn-sm" href="https://le-pendu-hangman.herokuapp.com/" role="button">Project</a>  
+						<a class="btn btn-primary btn-sm" href="https://github.com/jachang820/Le-Pendu" role="button">GitHub</a></div>
+				</div>
 			</div>
 		</section>
 		<section id="skills-section">
@@ -126,135 +144,35 @@
     		</h1>
     		<div id="skills-columns">
 					<div class="skill-level">
-						<h2>
-							<svg class="skills-text">
-		  					<text stroke="black" x="0" y="20" fill="white">
-		  					+++</text>
-		  				</svg>
-		  			</h2>
+						<h2 class="stroke" id="three-plus">+++</h2>
 						<ul>
-							<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="15" y="48" fill="white">
-			  					C</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="2" y="77" transform="rotate(-3)" fill="white">
-			  					C++</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="19" y="103" fill="white">
-			  					Ruby</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="9" y="128" rotate="10 5,0" transform="rotate(2)" fill="white">
-			  					Java</text>
-			  				</svg>
-			  			</li>
+							<li class="stroke">C</li>
+			  			<li class="stroke">C++</li>
+			  			<li class="stroke">Ruby</li>
+			  			<li class="stroke">Java</li>
 		  			</ul>
 					</div>
 					<div class="skill-level">
-						<h2>
-							<svg class="skills-text">
-		  					<text stroke="black" x="0" y="20" fill="white">
-		  					++</text>
-		  				</svg>
-		  			</h2>
+						<h2 class="stroke">++</h2>
 						<ul>
-							<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="3" y="42" fill="white">
-			  					Python</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="12" y="72" fill="white">
-			  					R</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="2" y="103" transform="rotate(-3)" rotate="0 4 0 0 0 6 4 4" fill="white">
-			  					HTML/CSS</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="25" y="126" transform="rotate(2)" fill="white">
-			  					Bash</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="3" y="155" fill="white">
-			  					Git</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="2" y="181" transform="rotate(-1)" fill="white">
-			  					Photoshop</text>
-			  				</svg>
-			  			</li>
+							<li class="stroke">Python</li>
+			  			<li class="stroke">R</li>
+			  			<li class="stroke">HTML/CSS</li>
+			  			<li class="stroke">Bash</li>
+			  			<li class="stroke">Git</li>
+			  			<li class="stroke">Photoshop</li>
 		  			</ul>
 					</div>
-					<div class="skill=level">
-						<h2>
-							<svg class="skills-text">
-		  					<text stroke="black" x="0" y="20" fill="white">
-		  					+</text>
-		  				</svg>
-		  			</h2>
+					<div class="skill-level">
+						<h2 class="stroke">+</h2>
 						<ul>
-							<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="15" y="35" transform="rotate(5)" fill="white">
-			  					SML</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="2" y="63" fill="white">
-			  					Javascript</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="19" y="93" fill="white">
-			  					MATLAB</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="30" y="120" fill="white">
-			  					Rails</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="13" y="149" transform="rotate(-3)" fill="white">
-			  					Sinatra</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="15" y="174" fill="white">
-			  					JQuery</text>
-			  				</svg>
-			  			</li>
-			  			<li>
-								<svg class="skills-text">
-			  					<text stroke="black" x="5" y="205" rotate="0, 5, 0, 0, 0, 0, 15, 13, 12, 17" transform="rotate-2" fill="white">
-			  					Tensorflow</text>
-			  				</svg>
-			  			</li>
+							<li class="stroke">SML</li>
+			  			<li class="stroke">Javascript</li>
+			  			<li class="stroke">MATLAB</li>
+			  			<li class="stroke">Rails</li>
+			  			<li class="stroke">Sinatra</li>
+			  			<li class="stroke">JQuery</li>
+			  			<li class="stroke">Tensorflow</li>
 		  			</ul>
 					</div>
 				</div>

@@ -23,4 +23,14 @@ $(document).ready(function() {
 		$("#carousel-subtitles").html(
 			$(".carousel-item.active .carousel-caption").html());
 	}
+
+	$("#carousel-subtitles").click(function() {
+		$("#grey-out-screen").fadeIn("slow");
+		$("#project-modal").slideDown("slow");
+	});
+
+	$("#grey-out-screen").click(function() {
+		$("#grey-out-screen").fadeOut("slow");
+		$("#project-modal").slideUp("slow");
+	});
 });
