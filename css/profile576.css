@@ -113,6 +113,11 @@
         margin-top: 2em;
     }
 
+    #project-modal {
+        left: calc(49% - 16rem);
+        width: 32rem;
+    }
+
     #skills-section {
         height: 25em;
     }

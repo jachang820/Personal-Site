@@ -137,8 +137,9 @@ background-size:100px 50px;
     top: -8rem;
     display: block;
     text-align: center;
-    height: 4em;
+    height: 5em;
     font-size: 2vw;
+    cursor: pointer;
 }
 
 #grey-out-screen {
@@ -149,20 +150,22 @@ background-size:100px 50px;
     width: 100vw;
     background: rgba(0, 0, 0, 0.8);
     display: none;
+    z-index: 1040;
 }
 
 #project-modal {
     position: fixed;
     top: 10vh;
     height: 85vh;
-    left: 15vw;
-    width: 70vw;
+    left: 4vw;
+    width: 90vw;
     background-color: white;
     display: none;
     border-radius: 2em;
     box-shadow: 3px 3px;
     padding: 2px;
     z-index: 1050;
+    margin: 0;
 }
 
 .modal-img {
@@ -307,8 +310,12 @@ background-size:100px 50px;
 }
 
 .icon {
-    width: 2vw;
-    height: 2vw;
+    width: 2em;
+    height: 2em;
+}
+
+.code-text {
+    font-style: italic;
 }
 
 .school {
