@@ -10,7 +10,7 @@ $(document).ready(function () {
         if ($(mooc_num).is(':visible')) {
             show_card = false;
         }
-        $("#mooc-section").find("div.active").removeClass("active");
+        $("#mooc").find("div.active").removeClass("active");
         if (show_card) {
             $(mooc_num).addClass("active");
             $(details_row).addClass("active");

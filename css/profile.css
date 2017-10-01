@@ -106,7 +106,7 @@ section {
     display: inline-block;
 }
 
-#project-section, #business-card {
+#project, #business-card {
 background-color:#eeeeee;
 background-image: 
 radial-gradient(circle at 100% 150%, #eeeeee 24%, white 25%, white 28%, #eeeeee 29%, #eeeeee 36%, white 36%, white 40%, transparent 40%, transparent),
@@ -117,14 +117,14 @@ radial-gradient(circle at 0    50%, white 5%, #eeeeee 6%, #eeeeee 15%, white 16%
 background-size:100px 50px;
 }
 
-#project-section .container {
+#project .container {
     width: 100%;
     margin: 0 auto;
     margin-top: 1em;
     margin-bottom: 2em;
 }
 
-#project-section svg.text {
+#project svg.text {
     width: 6em;
 }
 
@@ -202,21 +202,21 @@ background-size:100px 50px;
     letter-spacing: 1px;
 }
 
-#skills-section {
+#skills {
     background-color: #cdf383;
     height: 22.5em;
 }
 
-#skills-section svg.text {
+#skills svg.text {
     width: 4em;
 }
 
-#skills-section h1, 
-#experience-section h1 {
+#skills h1, 
+#experience h1 {
     margin-top: 0.5rem;
 }
 
-#skills-section li {
+#skills li {
     font-family: 'Impact', sans-serif;
     font-size: 1.5em;
     list-style: none;
@@ -256,14 +256,14 @@ background-size:100px 50px;
     line-height: 0.9em;
 }
 
-#experience-section {
+#experience {
     color: #ffffff;
     background-color: #093852;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
 
-#education-section {
+#education {
     background-image: url('../img/pink-sky.jpg');
     background-size: 100%;
     background-color: #f8d0db;
@@ -272,23 +272,23 @@ background-size:100px 50px;
 
 }
 
-#experience-section svg.text {
+#experience svg.text {
     width: 6.6em;
 }
 
-#education-section .container {
+#education .container {
     width: 100%;
 }
 
-#education-section .container.content {
+#education .container.content {
     display: block;
 }
 
-#education-section svg.text {
+#education svg.text {
     width: 6em;
 }
 
-#education-section h1 {
+#education h1 {
     margin-top: 3rem;
     margin-bottom: -0.5em;
 }
@@ -340,7 +340,7 @@ background-size:100px 50px;
     font-style: italic;
 }
 
-#mooc-section {
+#mooc {
     background-color: #2a2727;
 }
 
@@ -353,7 +353,7 @@ background-size:100px 50px;
     margin-bottom: 1em;
 }
 
-#mooc-section svg.text {
+#mooc svg.text {
     width: 4.5em;
 }
 
