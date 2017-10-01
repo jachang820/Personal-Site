@@ -109,8 +109,16 @@
 
     #project .container {
         width: 40em;
+        height: 25.5em;
         margin: 0 auto;
         margin-top: 2em;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        #project .container {
+            height: 29em;
+        }
     }
 
     #project-modal {
@@ -119,12 +127,12 @@
     }
 
     #skills {
-        height: 25em;
+        height: 27em;
     }
 
     #skills h1, 
     #experience h1 {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
     #skills li {

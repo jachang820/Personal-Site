@@ -121,7 +121,6 @@ background-size:100px 50px;
     width: 100%;
     margin: 0 auto;
     margin-top: 1em;
-    margin-bottom: 2em;
 }
 
 #project svg.text {
@@ -134,12 +133,15 @@ background-size:100px 50px;
 
 #carousel-subtitles {
     position: relative;
-    top: -8rem;
-    display: block;
+    top: -6.5rem;
+    display: inline;
     text-align: center;
-    height: 5em;
-    font-size: 2vw;
+    font-size: 1.8vw;
     cursor: pointer;
+}
+
+h3 {
+    margin: 0;
 }
 
 #grey-out-screen {
